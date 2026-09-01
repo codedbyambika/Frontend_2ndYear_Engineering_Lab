@@ -1,0 +1,78 @@
+/* Element selector */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 40px;
+}
+
+/* ID selector */
+#about {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+/* Element selector */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Class selector */
+.intro {
+  color: rgb(70, 70, 70);
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Element selector */
+h2 {
+  color: #3498db;
+  margin-top: 30px;
+}
+
+/* Ordered list */
+.movies {
+  background-color: #eef6ff;
+  padding: 20px 40px;
+  border-left: 5px solid #3498db;
+}
+
+.movies li {
+  padding: 6px;
+}
+
+/* Unordered list */
+.cities {
+  background-color: rgb(240, 250, 240);
+  padding: 20px 40px;
+  border-left: 5px solid rgb(46, 204, 113);
+  list-style-type: square;
+}
+
+.cities li {
+  padding: 6px;
+}
+
+/* Class selector */
+.contact {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Pseudo-class selector */
+a:hover {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+/* Pseudo-class for list items */
+.movies li:hover,
+.cities li:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
