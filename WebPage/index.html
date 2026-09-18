@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Amazon Style Cart</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+      <div class="logo">ShopZone</div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search products..." />
+        <button>Search</button>
+      </div>
+
+      <div class="nav-links">
+        <span>Hello, Sign in</span>
+        <span>Returns</span>
+        <span>🛒 Cart</span>
+      </div>
+    </header>
+
+    <!-- ================= MAIN CONTAINER ================= -->
+
+    <main class="main-container">
+      <!-- ================= SIDEBAR ================= -->
+
+      <aside class="sidebar">
+        <h2>Shopping Cart</h2>
+
+        <hr />
+
+        <h3>Categories</h3>
+
+        <label>
+          <input type="checkbox" />
+          Electronics
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          Fashion
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          Books
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          Home & Kitchen
+        </label>
+
+        <h3>Delivery</h3>
+
+        <label>
+          <input type="radio" name="delivery" />
+          Today
+        </label>
+
+        <label>
+          <input type="radio" name="delivery" />
+          Tomorrow
+        </label>
+
+        <h3>Price Range</h3>
+
+        <label>
+          <input type="checkbox" />
+          Under ₹500
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          ₹500 - ₹1000
+        </label>
+
+        <label>
+          <input type="checkbox" />
+          Above ₹1000
+        </label>
+
+        <button class="filter-btn">Apply Filters</button>
+      </aside>
+
+      <!-- ================= CONTENT ================= -->
+
+      <section class="content">
+        <h1>Your Shopping Cart</h1>
+
+        <p class="cart-count">3 items in your cart</p>
+
+        <!-- ================= PRODUCT CARDS ================= -->
+
+        <div class="products">
+          <!-- PRODUCT 1 -->
+
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTcjIL7QtqZg4xiZhyf4a1NvSozCbxAfK-6WmbjTUBU_ybh6UvD5mz8953R1OtX9XMVe8jCvFx75MFbOqAk5guwfDMjBaL3VXzi8jEW0b4U62GtDBitfr5Ayg"
+              alt="Wireless Headphones"
+            />
+
+            <div class="product-info">
+              <h2>Wireless Headphones</h2>
+
+              <p class="description">
+                High-quality wireless headphones with noise cancellation.
+              </p>
+
+              <p class="rating">⭐⭐⭐⭐☆ (4.2)</p>
+
+              <p class="price">₹1,499</p>
+
+              <p class="delivery">FREE Delivery Tomorrow</p>
+
+              <div class="quantity">
+                Quantity:
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+              </div>
+
+              <button class="cart-btn">Remove from Cart</button>
+            </div>
+          </div>
+
+          <!-- PRODUCT 2 -->
+
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQeAqXfWsHcwDNSoE2eaIMdS-6W5bRdAaqHPaxCSuzyAkzcELQjjs9Md4xI1hepGgr3U9oMjDnIlbbVOddI_Dtg9dFOB0tKg7LTiDvXFGAJvj6cm05QF8laUw"
+              alt="Smart Watch"
+            />
+
+            <div class="product-info">
+              <h2>Smart Watch</h2>
+
+              <p class="description">
+                Stylish smartwatch with health tracking and fitness features.
+              </p>
+
+              <p class="rating">⭐⭐⭐⭐☆ (4.4)</p>
+
+              <p class="price">₹1,599</p>
+
+              <p class="delivery">FREE Delivery Tomorrow</p>
+
+              <div class="quantity">
+                Quantity:
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+              </div>
+
+              <button class="cart-btn">Remove from Cart</button>
+            </div>
+          </div>
+
+          <!-- PRODUCT 3 -->
+
+          <div class="product-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTU9bNnWP0BUBjL7uEthCp7paXjNoU081iYZw8XUUniK3qvsqN3lMHrlz4ol-gLlJPzmmUGHt7wuBMW2flIFsFVH2ust8JSOmfYOYMEu2tDHLxeUiFc9OzYnA"
+              alt="Laptop Backpack"
+            />
+
+            <div class="product-info">
+              <h2>Laptop Backpack</h2>
+
+              <p class="description">
+                Durable backpack for college, laptops and everyday use.
+              </p>
+
+              <p class="rating">⭐⭐⭐⭐⭐ (4.7)</p>
+
+              <p class="price">₹1789</p>
+
+              <p class="delivery">FREE Delivery Tomorrow</p>
+
+              <div class="quantity">
+                Quantity:
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+              </div>
+
+              <button class="cart-btn">Remove from Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= ORDER SUMMARY ================= -->
+
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+
+          <p>
+            Items (3):
+            <span>₹2697</span>
+          </p>
+
+          <p>
+            Delivery:
+            <span>FREE</span>
+          </p>
+
+          <hr />
+
+          <h3>
+            Total:
+            <span>₹2697</span>
+          </h3>
+
+          <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+
+        <!-- ================= BLOG SECTION ================= -->
+
+        <section class="blog-section">
+          <h2>Explore Our Blogs</h2>
+
+          <div class="blog-container">
+            <!-- BLOG 1 -->
+
+            <article class="blog-card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoS7dnRaLHvPRkJ2hhGo_T6m2F5ftZl_W506OkXTh0oKDOYKENgTHu9yI&s=10"
+                alt="Shopping tips"
+              />
+
+              <h3>5 Smart Online Shopping Tips</h3>
+
+              <p>
+                Learn how to find useful products, compare prices and shop
+                smartly.
+              </p>
+
+              <a href="#"> Read More → </a>
+            </article>
+
+            <!-- BLOG 2 -->
+
+            <article class="blog-card">
+              <img
+                src="https://media.geeksforgeeks.org/wp-content/uploads/20240808130505/Top-new-technology-trends-that-will-define-the-future.webp"
+                alt="Technology trends"
+              />
+
+              <h3>Latest Technology Trends</h3>
+
+              <p>Explore modern gadgets and technologies for everyday life.</p>
+
+              <a href="#"> Read More → </a>
+            </article>
+
+            <!-- BLOG 3 -->
+
+            <article class="blog-card">
+              <img
+                src="https://i.pinimg.com/736x/73/43/c2/7343c24f5743a91a9d6d56a229306c67.jpg"
+                alt="Student essentials"
+              />
+
+              <h3>Essential Products for Students</h3>
+
+              <p>
+                Discover useful products for college students and hostel life.
+              </p>
+
+              <a href="#"> Read More → </a>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <p>© 2026 ShopZone | Designed using HTML & CSS</p>
+    </footer>
+  </body>
+</html>
