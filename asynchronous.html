@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asynchronous Programming</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f4f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        background: white;
+        padding: 35px;
+        width: 350px;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #333;
+        font-size: 24px;
+      }
+
+      button {
+        background-color: #4a67e8;
+        color: white;
+        border: none;
+        padding: 12px 22px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 15px;
+      }
+
+      button:hover {
+        background-color: #354fc4;
+      }
+
+      #status {
+        color: #555;
+        margin-top: 20px;
+      }
+
+      #result {
+        margin-top: 15px;
+        padding: 12px;
+        background-color: #f2f4ff;
+        border-radius: 8px;
+        color: #333;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Server Data Fetching</h1>
+      <button onclick="handleData()">Fetch Data</button>
+      <p id="status">Click the button to fetch data.</p>
+      <div id="result"></div>
+    </div>
+    <script>
+      // Simulate fetching data from server
+      function fetchData() {
+        document.getElementById("status").innerText =
+          "Fetching data from server...";
+        document.getElementById("result").innerHTML = "";
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            const data = {
+              id: 1,
+              name: "Ambika",
+              course: "Computer Science",
+              university: "GLA University",
+            };
+            resolve(data);
+          }, 3000);
+        });
+      }
+      // Handle resolved data
+      function handleData() {
+        fetchData()
+          .then((data) => {
+            document.getElementById("status").innerText =
+              "Data received successfully!";
+            document.getElementById("result").innerHTML = `
+                        <h3>Server Data:</h3>
+                        <p>ID: ${data.id}</p>
+                        <p>Name: ${data.name}</p>
+                        <p>Course: ${data.course}</p>
+                        <p>University: ${data.university}</p>
+                    `;
+          })
+          .catch((error) => {
+            document.getElementById("status").innerText = "Error: " + error;
+          });
+      }
+    </script>
+  </body>
+</html>
